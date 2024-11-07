@@ -1,0 +1,23 @@
+/* src/app/course-list/course-list.component.css */
+
+h2 {
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+  }
+  

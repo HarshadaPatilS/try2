@@ -1,0 +1,19 @@
+<!-- src/app/course-list/course-list.component.html -->
+
+<h2>Available Courses</h2>
+
+<div *ngIf="errorMessage" class="error-message">
+  {{ errorMessage }}
+</div>
+
+<ul>
+  <li *ngFor="let course of courses">
+    <h3>{{ course.name }}</h3>
+    <p>Description: {{ course.description }}</p>
+    <p>Duration: {{ course.duration }}</p>
+    <p>Availability: {{ course.availabilityStatus }}</p>
+    <p>Available From: {{ course.availableFrom | date }}</p>
+    <p>Available To: {{ course.availableTo | date }}</p>
+    <p>Slots Available: {{ course.slotsAvailable }}</p>
+  </li>
+</ul>
